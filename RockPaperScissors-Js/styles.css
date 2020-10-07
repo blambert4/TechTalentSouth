@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: violet;
+}
+header {
+	background: white;
+	padding: 20px;
+
+}
+
+header > h1 {
+	color: green;
+	text-align: center;
+}
+
+.scoreboard {
+	margin: 20px auto;
+	border: solid white 3px;
+	border-radius: 4px;
+	width: 200px;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.badge {
+	background: green;
+	color: white;
+	font-size: 14px;
+	padding: 2px 10px;
+}
+
+#user-label {
+	position: absolute;
+	top: 30px;
+	left: -25px;
+}
+
+#comp-label {
+	position: absolute;
+	top: 30px;
+	right: -30px;
+}
+
+.result {
+	font-size: 40px;
+	color: white;	
+}
+
+.result > p {
+	text-align: center;
+	font-weight: bold;
+}
+.choices {
+	margin-top: 50px 0;
+	text-align: center;
+}
+
+
+.choice {
+	display: inline-block;
+	border: solid white 4px;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 0 20px;
+	transition: all 0.3s ease;
+}
+.choice:hover {
+	cursor: pointer;
+	background: lightgreen;
+}
+
+#action-message {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.green-glow {
+	border: solid 4px green;
+	box-shadow: 0 0 10px #31b43a
+}
+
+.red-glow {
+	border: solid 4px red;
+	box-shadow: 0 0 10px red;
+}
+
+.yellow-glow {
+	border: solid 4px yellow;
+	box-shadow: 0 0 10px yellow;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+ <style>
+  .oval {
+	width: 80px;
+	height: 20px;
+	border-radius: 30px;
+	background-color: yellow;
+	border: solid grey .5px;
+   }
+ .circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: white;
+	position: relative;
+   }
+.animate {
+	animation: slide 1s linear;
+   }
+
+ @keyframes slide {
+	0% {left: 0px}
+	50% {left: 40px}
+	100% {left: 80px}
+   }
+
+ </style>
+</head>
+<!-- first div is the shape of my tool -->
+<div class = "oval" onclick = "one()">
+ <div class = "circle">
+ </div>
+</div>
+<script>
+ function one() {
+	var x = document.getElementsByClassName("circle");
+	x[0].classList.add("animation")
+ }
+</script>
+</body>
+
+</html>
