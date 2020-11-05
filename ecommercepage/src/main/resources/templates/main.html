@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+  <html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head th:replace="fragments/fragments :: head"></head>
+  <body>
+  <div th:replace="fragments/fragments :: navbar" ></div>
+ 
+  <main role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+          <div class="container">
+              <h1 class="display-3">Tech Talent Store</h1>
+              <p>This is a small e-commerce application that allows the user to purchase some of a few products that are offered here. </p>
+              <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more! &raquo;</a></p>
+          </div>
+      </div>
+ 
+      <div class="container">
+          <div class="row">
+              <div class="container">
+                  
+                  <!--First Card-->
+                  <div class = "row">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">iPhone X</h5>
+                          <p class="card-text"> Buy it.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!--Second Card-->
+                  <div class = "row">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">iPhone 8 Silver</h5>
+                          <p class="card-text">It's old.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!--Third Card-->
+                  <div class = "row">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">LG C7 4K TV</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!--Fourth Card-->
+                  <div class = "row">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Something Else</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </main>
+ 
+  <footer th:replace="fragments/fragments :: footer"></footer>
+  </body>
+  </html>
+
